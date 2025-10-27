@@ -11,7 +11,7 @@
         /* Use Inter font globally */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* Light gray background */
+            /* Changed background color class to bg-gray-900 below */
         }
         /* Mobile-first centering and max width for a classic Link in Bio look */
         .link-container {
@@ -21,26 +21,28 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex items-start justify-center pt-8 md:pt-16">
+<!-- UPDATED: Added bg-gray-900 (black) and text-white -->
+<body class="min-h-screen flex items-start justify-center pt-8 md:pt-16 bg-gray-900 text-white">
     <div class="link-container w-full">
 
         <!-- Header: Logo and Description -->
         <div class="text-center mb-10">
-            <!-- Replace this src with your actual, publicly accessible logo image URL -->
+            <!-- UPDATED: URL now points to the logo hosted on your GitHub repo -->
             <img 
-                src="FULLEST_PUBLIC_LOGO_URL_HERE" 
-                onerror="this.onerror=null; this.src='https://placehold.co/120x120/1f2937/ffffff?text=WEBFAST';"
+                src="https://webfastshop.github.io/webfast-link-in-bio/fulllogo.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/120x120/171717/ffffff?text=WEBFAST';"
                 alt="Webfast Logo" 
-                class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg mb-4 ring-4 ring-white"
+                class="w-32 h-32 mx-auto object-cover shadow-lg mb-4 ring-4 ring-white"
             >
-            <h1 class="text-3xl font-extrabold text-gray-900 mb-1">Webfast</h1>
-            <p class="text-gray-500 font-medium tracking-wide">WEBSITES THAT LOAD FAST AND SELL FASTER</p>
+            <h1 class="text-3xl font-extrabold text-white mb-1">Webfast</h1>
+            <!-- UPDATED: Text color changed to light gray (text-gray-300) -->
+            <p class="text-gray-300 font-medium tracking-wide">WEBSITES THAT LOAD FAST AND SELL FASTER</p>
         </div>
 
         <!-- Links Section -->
         <div class="space-y-4">
             
-            <!-- 1. Primary CTA: WhatsApp -->
+            <!-- 1. Primary CTA: WhatsApp (Color unchanged for high contrast) -->
             <a href="https://wa.me/27660171855" 
                class="flex items-center justify-center p-4 w-full bg-green-500 hover:bg-green-600 text-white font-bold text-lg uppercase tracking-wider rounded-2xl shadow-xl transition duration-200 transform hover:scale-[1.02] active:scale-100"
                target="_blank" rel="noopener noreferrer">
@@ -51,7 +53,7 @@
                 Chat with Webfast (WhatsApp)
             </a>
 
-            <!-- 2. Primary CTA: Call Now -->
+            <!-- 2. Primary CTA: Call Now (Color unchanged for high contrast) -->
             <a href="tel:+27660171855" 
                class="flex items-center justify-center p-4 w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-lg uppercase tracking-wider rounded-2xl shadow-xl transition duration-200 transform hover:scale-[1.02] active:scale-100"
                target="_blank" rel="noopener noreferrer">
@@ -61,9 +63,9 @@
                 Call Webfast Now
             </a>
 
-            <!-- 3. Secondary Link: Website -->
+            <!-- 3. Secondary Link: Website (Color adjusted for dark mode) -->
             <a href="https://www.webfast.shop" 
-               class="flex items-center justify-center p-4 w-full bg-white border border-gray-300 hover:bg-gray-100 text-gray-800 font-semibold rounded-2xl shadow-md transition duration-200 transform hover:scale-[1.02] active:scale-100"
+               class="flex items-center justify-center p-4 w-full bg-gray-800 border border-gray-700 hover:bg-gray-700 text-white font-semibold rounded-2xl shadow-md transition duration-200 transform hover:scale-[1.02] active:scale-100"
                target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" />
@@ -71,9 +73,9 @@
                 Visit Our Website
             </a>
 
-            <!-- 4. Secondary Link: Email -->
+            <!-- 4. Secondary Link: Email (Color adjusted for dark mode) -->
             <a href="mailto:support@webfast.shop" 
-               class="flex items-center justify-center p-4 w-full bg-white border border-gray-300 hover:bg-gray-100 text-gray-800 font-semibold rounded-2xl shadow-md transition duration-200 transform hover:scale-[1.02] active:scale-100"
+               class="flex items-center justify-center p-4 w-full bg-gray-800 border border-gray-700 hover:bg-gray-700 text-white font-semibold rounded-2xl shadow-md transition duration-200 transform hover:scale-[1.02] active:scale-100"
                target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -85,8 +87,9 @@
         </div>
 
         <!-- Footer / Branding -->
-        <div class="text-center mt-12 pt-6 border-t border-gray-200">
-            <p class="text-xs text-gray-400 font-medium">Powered by Webfast</p>
+        <div class="text-center mt-12 pt-6 border-t border-gray-700">
+            <!-- UPDATED: Footer border and text color for dark mode -->
+            <p class="text-xs text-gray-500 font-medium">Powered by Webfast</p>
         </div>
 
     </div>
